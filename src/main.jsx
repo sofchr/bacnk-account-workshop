@@ -7,12 +7,16 @@ import App from "./App";
 
 // Create the Redux store
 const store = configureStore({
-  // ***TODO***
   // Set the accountReducer as the reducer for the 'account' state
+  reducer: {
+    account: accountReducer,
+  },
 });
 
 // Render the App component inside the Provider component
-ReactDOM
-  .render
-  // ***TODO***
-  ();
+ReactDOM.createRoot(document.getElementById("root")).render(
+  //Provider component needs to be linked to the store
+  <Provider store={store}>
+    <App />
+  </Provider>
+);

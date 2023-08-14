@@ -17,23 +17,26 @@ const App = () => {
 
   // Event handler for deposit action
   const handleDeposit = () => {
-    dispatch(deposit({ amount: Number(depositAmount) })); // Dispatch deposit action with the entered deposit amount
+    dispatch(deposit({ amount: Number(depositAmount) })); // Dispatch deposit action with the entered deposit amount. deposit action is coming from the slice
     setDepositAmount(0); // Reset deposit amount after deposit action is dispatched
   };
 
   // Event handler for withdrawal action
   const handleWithdrawal = () => {
-    // ***TODO***
     // Dispatch withdrawal action with the entered withdrawal amount
+    dispatch(withdrawal({ amount: Number(withdrawalAmount) }));
     // Reset withdrawal amount after withdrawal action is dispatched
+    setWithdrawalAmount(0);
   };
 
   // Event handler for transfer action
   const handleTransfer = () => {
-    // ***TODO***
     // Dispatch transfer action with the entered recipient name and transfer amount
+    dispatch(transfer({ name: transferName, amount: Number(transferAmount) }));
     // Reset recipient name after transfer action is dispatched
+    setTransferName("");
     // Reset transfer amount after transfer action is dispatched
+    setTransferAmount(0);
   };
 
   return (
