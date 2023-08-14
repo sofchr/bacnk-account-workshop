@@ -8,6 +8,7 @@ const TransactionLog = () => {
 
   const handleToggleDropdown = () => {
     // ***TODO***
+    setIsOpen(!isOpen);
     // Toggle the isOpen state value when the button is clicked
   };
 

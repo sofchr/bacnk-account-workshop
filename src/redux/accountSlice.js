@@ -31,7 +31,7 @@ const accountSlice = createSlice({
         },
         transfer: (state, action) => {
             const { name, amount } = action.payload; // Get the recipient name and transfer amount from the action payload
-            state.balance -= action.payload // Decrease the balance by the transfer amount
+            state.balance -= amount // Decrease the balance by the transfer amount
             state.transactions.push({
                 // Add a new transaction object to the transactions array
                 action: `Transfer to ${name}`, // Action type is "Transfer to [Recipient Name]"      
