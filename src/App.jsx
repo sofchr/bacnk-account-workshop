@@ -43,7 +43,7 @@ const App = () => {
     <div className="app-container">
       <h1>Bank Account</h1>
       <div className="balance-container">
-        <h2>Current Balance: {balance}</h2>
+        <h2>Current Balance: {balance} (Damn, Moneybags)</h2>
         <div className="transaction-container">
           <h3>Deposit</h3>
           <input

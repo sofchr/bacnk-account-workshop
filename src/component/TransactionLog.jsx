@@ -5,6 +5,7 @@ import "./transactionLog.css"; // Import your custom CSS file
 const TransactionLog = () => {
   const transactions = useSelector((state) => state.account.transactions); // Get the transactions from the Redux store
   const [isOpen, setIsOpen] = useState(false); // State variable to track whether the log is open or closed
+  //every time you call a setter/setState the whole component will rerender, because it's changing the use state
 
   const handleToggleDropdown = () => {
     setIsOpen(!isOpen);

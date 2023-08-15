@@ -1,19 +1,19 @@
 body {
-  background-image: url("bank.PNG");
+  background-image: url("moneymoney.jpg");
 }
 
 .app-container {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  font-family: Rajdhani;
+  background-color: hsl(276, 95%, 84%);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -54,7 +54,8 @@ h1 {
 
 .transaction-container button {
   padding: 8px 16px;
-  background-color: #007bff;
+  background-color: #503b9a;
+  ;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -63,7 +64,8 @@ h1 {
 }
 
 .transaction-container button:hover {
-  background-color: #0056b3;
+  background-color: #221851;
+  ;
 }
 
 .transaction-log-container {
@@ -80,7 +82,7 @@ h1 {
 
 .transaction-log-button {
   padding: 8px 16px;
-  background-color: #007bff;
+  background-color: #503b9a;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -89,7 +91,7 @@ h1 {
 }
 
 .transaction-log-button:hover {
-  background-color: #0056b3;
+  background-color: #221851;
 }
 
 .transaction-log-list {
