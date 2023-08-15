@@ -41,7 +41,7 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1>Bank Account</h1>
+      <h1>Bank Account for Bad Bitches Only</h1>
       <div className="balance-container">
         <h2>Current Balance: {balance} (Damn, Moneybags)</h2>
         <div className="transaction-container">
